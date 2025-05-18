@@ -13,20 +13,20 @@ check_out: 12:00
 featured: true
 property_type: Madani Owned
 permalink: /madani-hospitality/properties/madani-tiny-house/
-featured_image: /assets/images/properties/madani-tiny-house-main.jpg
+featured_image: /assets/images/properties/madani-tiny-house-main.png
 gallery:
-  - image: /assets/images/properties/madani-tiny-house-living.jpg
+  - image: /assets/images/properties/madani-tiny-house-living.png
     alt: Living Area
-  - image: /assets/images/properties/madani-tiny-house-bedroom.jpg
+  - image: /assets/images/properties/madani-tiny-house-bedroom.png
     alt: Bedroom
-  - image: /assets/images/properties/madani-tiny-house-kitchen.jpg
+  - image: /assets/images/properties/madani-tiny-house-kitchen.png
     alt: Kitchen
-  - image: /assets/images/properties/madani-tiny-house-bathroom.jpg
+  - image: /assets/images/properties/madani-tiny-house-bathroom.png
     alt: Bathroom
-  - image: /assets/images/properties/madani-tiny-house-exterior.jpg
+  - image: /assets/images/properties/madani-tiny-house-exterior.png
     alt: House Exterior
-  - image: /assets/images/properties/madani-tiny-house-garden.jpg
-    alt: Garden View
+  - image: /assets/images/properties/madani-tiny-house-dining.png
+    alt: Dining Area
 amenities:
   - Free WiFi
   - Air conditioning
