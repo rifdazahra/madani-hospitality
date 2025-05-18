@@ -12,7 +12,7 @@ check_in: 14:00
 check_out: 12:00
 featured: true
 property_type: Madani Owned
-permalink: /madani-hospitality/properties/teras-senja-madani/
+permalink: /properties/teras-senja-madani/
 featured_image: /assets/images/properties/teras-senja-main.jpg
 gallery:
   - image: /assets/images/properties/teras-senja-living.jpg

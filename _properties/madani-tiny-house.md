@@ -12,7 +12,7 @@ check_in: 14:00
 check_out: 12:00
 featured: true
 property_type: Madani Owned
-permalink: /madani-hospitality/properties/madani-tiny-house/
+permalink: /properties/madani-tiny-house/
 featured_image: /assets/images/properties/madani-tiny-house-main.png
 gallery:
   - image: /assets/images/properties/madani-tiny-house-living.png
