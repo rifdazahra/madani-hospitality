@@ -39,6 +39,10 @@ amenities:
   - Prayer facilities
   - Halal-friendly environment
   - Private entrance
+  - Waste separation bins
+  - Eco-friendly toiletries
+  - Solar-powered outdoor lighting
+  - Natural building materials
 nearby_attractions:
   - name: Universitas Gadjah Mada (UGM)
     distance: 7 km
@@ -75,6 +79,21 @@ Located in peaceful Ngaglik, this tiny home offers a serene retreat with easy ac
 - 3 km from Sleman City Hall
 
 The surrounding area features local halal eateries, markets, and shops within walking distance, allowing you to experience authentic local life during your stay.
+
+## Sustainability & Islamic Values
+
+At Teras Senja, we believe that environmental stewardship aligns perfectly with Islamic principles of respect for Allah's creation:
+
+- Natural and sustainable building materials used throughout the property
+- Solar-powered outdoor lighting to reduce energy consumption
+- Segregated waste bins for organic, non-organic, and recyclable materials
+- Organic waste recycling through our chicken farm and composting system
+- Eco-friendly and halal-certified toiletries and cleaning products
+- Water conservation practices aligned with Islamic teachings on avoiding waste
+- Energy-efficient appliances and lighting
+- Locally sourced, halal furnishings and decorations
+
+By staying at Teras Senja, you're supporting a business that honors both Islamic values and environmental responsibility.
 
 ## Additional Services
 

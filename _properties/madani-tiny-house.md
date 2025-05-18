@@ -40,6 +40,10 @@ amenities:
   - Mountain view
   - BBQ grill
   - Outdoor furniture
+  - Waste separation bins
+  - Eco-friendly toiletries
+  - Energy-efficient appliances
+  - Rainwater harvesting
 nearby_attractions:
   - name: Universitas Gadjah Mada (UGM)
     distance: 7 km
@@ -76,6 +80,21 @@ Located in peaceful Ngaglik, this tiny house offers the perfect balance between 
 - 5 km from Universitas Islam Indonesia (UII)
 
 The neighborhood features local markets and minimarkets within walking distance, allowing you to experience authentic local life during your stay.
+
+## Sustainability Features
+
+Our Tiny House embodies our commitment to sustainable living:
+
+- Small ecological footprint by design
+- Energy-efficient LED lighting and appliances
+- Segregated waste bins for organic, non-organic, and recyclable materials
+- Organic waste recycling through our chicken farm and composting system
+- Rainwater harvesting system for garden irrigation
+- Eco-friendly, locally-sourced toiletries
+- Sustainable building materials used in construction
+- Solar-powered outdoor lighting
+
+The tiny house concept itself promotes environmental consciousness, demonstrating that comfortable living is possible in a smaller, more resource-efficient space.
 
 ## Additional Services
 

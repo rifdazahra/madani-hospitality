@@ -39,6 +39,10 @@ amenities:
   - Hot water
   - Patio or balcony
   - Backyard
+  - Waste separation bins
+  - Eco-friendly toiletries
+  - Composting system
+  - Energy-efficient lighting
 nearby_attractions:
   - name: Universitas Gadjah Mada (UGM)
     distance: 7 km
@@ -75,6 +79,20 @@ Located in Ngaglik, this property offers the perfect balance between peaceful vi
 - Easy access to various cafes on Jalan Palagan Tentara Pelajar
 
 The neighborhood features local markets and minimarkets within walking distance, allowing you to experience authentic local life during your stay.
+
+## Sustainability Features
+
+At Madani Guesthouse, we're committed to environmental sustainability:
+
+- Segregated waste bins for organic, non-organic, and recyclable materials
+- Organic waste is recycled through our chicken farm and composting system
+- Energy-efficient LED lighting throughout the property
+- Eco-friendly, locally-sourced toiletries
+- Water conservation practices
+- Garden maintained with our own compost
+- Local and sustainable materials used in construction and decoration
+
+By staying with us, you're supporting sustainable tourism practices while enjoying all the comforts of home.
 
 ## Additional Services
 

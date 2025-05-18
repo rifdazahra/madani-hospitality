@@ -39,6 +39,10 @@ amenities:
   - Private entrance
   - Budget-friendly
   - Essentials provided
+  - Waste separation bins
+  - Eco-friendly toiletries
+  - Energy-saving appliances
+  - Natural ventilation
 nearby_attractions:
   - name: Universitas Gadjah Mada (UGM)
     distance: 7 km
@@ -76,6 +80,21 @@ Located in the tranquil area of Ngaglik, this studio offers a peaceful retreat w
 - 5 km from Universitas Islam Indonesia (UII)
 
 The surrounding area features local cafes, restaurants, and convenience stores within walking distance, making daily life convenient during your stay.
+
+## Sustainability Features
+
+Our compact studio demonstrates that eco-friendly accommodations can also be budget-friendly:
+
+- Efficient use of space and resources by design
+- Energy-saving LED lighting and appliances
+- Segregated waste bins for organic, non-organic, and recyclable materials
+- Organic waste recycling through our chicken farm and composting system
+- Eco-friendly, locally-sourced toiletries
+- Water-saving fixtures in bathroom and kitchen
+- Windows positioned for optimal natural lighting and ventilation
+- Locally sourced furnishings and decor
+
+The studio's compact footprint naturally reduces resource consumption, making it an environmentally conscious choice for the eco-aware traveler.
 
 ## Additional Services
 

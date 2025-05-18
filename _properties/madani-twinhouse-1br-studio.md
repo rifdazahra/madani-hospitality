@@ -39,6 +39,10 @@ amenities:
   - Patio or balcony
   - Garden view
   - Family-friendly
+  - Waste separation bins
+  - Eco-friendly toiletries
+  - Energy-efficient lighting
+  - Low-water landscaping
 nearby_attractions:
   - name: Universitas Gadjah Mada (UGM)
     distance: 7 km
@@ -76,6 +80,21 @@ Located in the desirable Ngaglik area, this Twinhouse offers the perfect balance
 - 5 km from Universitas Islam Indonesia (UII)
 
 The surrounding area features local markets, cafes, and restaurants within easy reach, allowing you to experience authentic local life during your stay.
+
+## Sustainability Features
+
+Our 1BR+Studio Twinhouse incorporates eco-friendly elements:
+
+- Energy-efficient LED lighting throughout the property
+- Segregated waste bins for organic, non-organic, and recyclable materials
+- Organic waste recycling through our chicken farm and composting system
+- Eco-friendly, locally-sourced toiletries and cleaning products
+- Low-water native plants in the garden requiring minimal irrigation
+- Water conservation fixtures in bathroom and kitchen
+- Natural cross-ventilation design to reduce air conditioning usage
+- Locally sourced construction materials and furnishings
+
+By choosing to stay in our Twinhouse, you're supporting sustainable tourism while enjoying a comfortable, flexible living space.
 
 ## Additional Services
 
