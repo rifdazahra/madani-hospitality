@@ -53,7 +53,7 @@ madani_hospitality/
 
 1. Clone this repository
    ```
-   git clone https://github.com/yourusername/madani_hospitality.git
+   git clone https://github.com/rifdazahra/madani_hospitality
    cd madani_hospitality
    ```
 

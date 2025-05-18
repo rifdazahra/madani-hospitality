@@ -1,11 +1,11 @@
 # Site settings
 title: Madani Group Hospitality
-email: your-email@example.com
+email: rifda.annelies.com
 description: >- # this means to ignore newlines until "baseurl:"
   Discover authentic Javanese hospitality in Yogyakarta with Madani Group Hospitality.
   Explore our collection of carefully curated properties in prime locations.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/madani-hospitality" # the subpath of your site, e.g. /blog
+url: "https://github.com/rifdazahra/madani-hospitality" # the base hostname & protocol for your site, e.g. http://example.com
 whatsapp_number: "+6281936127704" # Replace with your actual WhatsApp number
 
 # Build settings
