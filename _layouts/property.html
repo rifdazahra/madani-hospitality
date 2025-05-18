@@ -36,6 +36,11 @@ layout: default
             <div class="property-info">
                 <div class="property-main">
                     <h1 class="property-title">{{ page.title }}</h1>
+                    {% if page.property_type == "Madani Owned" %}
+                    <div class="property-badge" style="display: inline-block; background-color: var(--secondary-color); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem; margin-bottom: 10px;">
+                        <i class="fas fa-award"></i> Madani Owned Property
+                    </div>
+                    {% endif %}
                     <div class="property-location">
                         <i class="fas fa-map-marker-alt"></i> {{ page.location }}
                     </div>
