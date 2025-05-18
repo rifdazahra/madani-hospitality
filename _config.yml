@@ -18,7 +18,7 @@ plugins:
 collections:
   properties:
     output: true
-    permalink: /properties/:path/
+    permalink: /madani-hospitality/properties/:path/
 
 # Default settings
 defaults:

@@ -10,8 +10,8 @@ title: Our Properties
         <div class="property-filters">
             <div class="filter-buttons">
                 <button class="filter-button active" data-filter="all">All Properties</button>
-                <button class="filter-button" data-filter="owned">Owned Properties</button>
-                <button class="filter-button" data-filter="partner">Partner Properties</button>
+                <button class="filter-button" data-filter="Madani Owned">Madani Owned</button>
+                <button class="filter-button" data-filter="Partner">Partner Properties</button>
             </div>
             
             <div class="filter-dropdown">
@@ -27,12 +27,17 @@ title: Our Properties
         <div class="properties-grid">
             {% assign all_properties = site.properties %}
             {% for property in all_properties %}
-            <div class="property-card {% if property.owned %}owned{% else %}partner{% endif %}">
+            <div class="property-card" data-property-type="{{ property.property_type | default: 'Partner' }}">
                 <div class="property-image">
                     {% if property.featured_image %}
                     <img src="{{ property.featured_image | relative_url }}" alt="{{ property.title }}">
                     {% else %}
                     <img src="{{ "/assets/images/property-placeholder.jpg" | relative_url }}" alt="{{ property.title }}">
+                    {% endif %}
+                    {% if property.property_type == "Madani Owned" %}
+                    <div class="property-badge" style="position: absolute; top: 10px; right: 10px; background-color: var(--secondary-color); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">
+                        <i class="fas fa-award"></i> Madani Owned
+                    </div>
                     {% endif %}
                 </div>
                 <div class="property-details">
@@ -61,9 +66,12 @@ title: Our Properties
             
             {% if all_properties.size == 0 %}
             <!-- Placeholder properties if no properties are available yet -->
-            <div class="property-card owned">
+            <div class="property-card" data-property-type="Madani Owned">
                 <div class="property-image">
                     <img src="{{ "/assets/images/property-placeholder.jpg" | relative_url }}" alt="Luxury Villa">
+                    <div class="property-badge" style="position: absolute; top: 10px; right: 10px; background-color: var(--secondary-color); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">
+                        <i class="fas fa-award"></i> Madani Owned
+                    </div>
                 </div>
                 <div class="property-details">
                     <h3 class="property-title">Luxury Villa with Private Pool</h3>
@@ -82,13 +90,16 @@ title: Our Properties
                         </div>
                     </div>
                     <div class="property-price">IDR 1,200,000 / night</div>
-                    <a href="/properties/luxury-villa-ngaglik/" class="btn">View Details</a>
+                    <a href="{{ "/properties/luxury-villa-ngaglik/" | relative_url }}" class="btn">View Details</a>
                 </div>
             </div>
             
-            <div class="property-card owned">
+            <div class="property-card" data-property-type="Madani Owned">
                 <div class="property-image">
                     <img src="{{ "/assets/images/property-placeholder.jpg" | relative_url }}" alt="Modern Apartment">
+                    <div class="property-badge" style="position: absolute; top: 10px; right: 10px; background-color: var(--secondary-color); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">
+                        <i class="fas fa-award"></i> Madani Owned
+                    </div>
                 </div>
                 <div class="property-details">
                     <h3 class="property-title">Modern Apartment in City Center</h3>
@@ -111,9 +122,12 @@ title: Our Properties
                 </div>
             </div>
             
-            <div class="property-card owned">
+            <div class="property-card" data-property-type="Madani Owned">
                 <div class="property-image">
                     <img src="{{ "/assets/images/property-placeholder.jpg" | relative_url }}" alt="Cozy Homestay">
+                    <div class="property-badge" style="position: absolute; top: 10px; right: 10px; background-color: var(--secondary-color); color: white; padding: 4px 10px; border-radius: 4px; font-size: 0.8rem;">
+                        <i class="fas fa-award"></i> Madani Owned
+                    </div>
                 </div>
                 <div class="property-details">
                     <h3 class="property-title">Cozy Homestay with Mountain View</h3>
@@ -136,7 +150,7 @@ title: Our Properties
                 </div>
             </div>
             
-            <div class="property-card partner">
+            <div class="property-card" data-property-type="Partner">
                 <div class="property-image">
                     <img src="{{ "/assets/images/property-placeholder.jpg" | relative_url }}" alt="Studio Apartment">
                 </div>
@@ -161,7 +175,7 @@ title: Our Properties
                 </div>
             </div>
             
-            <div class="property-card partner">
+            <div class="property-card" data-property-type="Partner">
                 <div class="property-image">
                     <img src="{{ "/assets/images/property-placeholder.jpg" | relative_url }}" alt="Family House">
                 </div>
@@ -186,7 +200,7 @@ title: Our Properties
                 </div>
             </div>
             
-            <div class="property-card partner">
+            <div class="property-card" data-property-type="Partner">
                 <div class="property-image">
                     <img src="{{ "/assets/images/property-placeholder.jpg" | relative_url }}" alt="Traditional Javanese House">
                 </div>
@@ -222,7 +236,7 @@ title: Our Properties
         const propertyCards = document.querySelectorAll('.property-card');
         const locationFilter = document.getElementById('locationFilter');
         
-        // Filter by property type (owned/partner)
+        // Filter by property type (Madani Owned/Partner)
         filterButtons.forEach(button => {
             button.addEventListener('click', function() {
                 const filter = this.getAttribute('data-filter');
@@ -250,28 +264,13 @@ title: Our Properties
             const locationValue = locationFilter ? locationFilter.value : 'all';
             
             propertyCards.forEach(card => {
-                const location = card.querySelector('.property-location').textContent.toLowerCase();
-                let showByType = false;
-                let showByLocation = false;
+                const cardType = card.getAttribute('data-property-type');
+                const cardLocation = card.querySelector('.property-location').textContent.toLowerCase();
                 
-                // Check type filter
-                if (typeFilter === 'all') {
-                    showByType = true;
-                } else if (typeFilter === 'owned' && card.classList.contains('owned')) {
-                    showByType = true;
-                } else if (typeFilter === 'partner' && card.classList.contains('partner')) {
-                    showByType = true;
-                }
+                let typeMatch = typeFilter === 'all' || cardType === typeFilter;
+                let locationMatch = locationValue === 'all' || cardLocation.includes(locationValue.toLowerCase());
                 
-                // Check location filter
-                if (locationValue === 'all') {
-                    showByLocation = true;
-                } else if (location.includes(locationValue.replace('-', ' '))) {
-                    showByLocation = true;
-                }
-                
-                // Show or hide based on both filters
-                if (showByType && showByLocation) {
+                if (typeMatch && locationMatch) {
                     card.style.display = 'block';
                 } else {
                     card.style.display = 'none';

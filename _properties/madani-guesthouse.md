@@ -11,7 +11,8 @@ min_stay: 1
 check_in: 14:00
 check_out: 12:00
 featured: true
-permalink: /properties/madani-guesthouse/
+property_type: Madani Owned
+permalink: /madani-hospitality/properties/madani-guesthouse/
 featured_image: /assets/images/properties/madani-guesthouse-main.jpg
 gallery:
   - image: /assets/images/properties/madani-guesthouse-living.jpg

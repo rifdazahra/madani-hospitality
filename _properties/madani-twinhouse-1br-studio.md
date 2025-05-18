@@ -11,7 +11,8 @@ min_stay: 1
 check_in: 14:00
 check_out: 12:00
 featured: true
-permalink: /properties/madani-twinhouse-1br-studio/
+property_type: Madani Owned
+permalink: /madani-hospitality/properties/madani-twinhouse-1br-studio/
 featured_image: /assets/images/properties/madani-twinhouse-1br-main.jpg
 gallery:
   - image: /assets/images/properties/madani-twinhouse-1br-living.jpg
