@@ -1,0 +1,52 @@
+# Site settings
+title: Madani Group Hospitality
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Discover authentic Javanese hospitality in Yogyakarta with Madani Group Hospitality.
+  Explore our collection of carefully curated properties in prime locations.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+whatsapp_number: "+6281936127704" # Replace with your actual WhatsApp number
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  properties:
+    output: true
+    permalink: /properties/:path/
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+      type: "properties"
+    values:
+      layout: "property"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - madani_hospitality_website_plan.md
+  - property_listing_template.md
+  - yogyakarta_attractions.md
+  - about_us_content.md 

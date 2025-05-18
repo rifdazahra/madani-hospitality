@@ -1,0 +1,149 @@
+---
+layout: default
+---
+
+<div class="property-page">
+    <div class="property-header">
+        <div class="container">
+            <div class="property-gallery">
+                <div class="main-image">
+                    {% if page.featured_image %}
+                    <img src="{{ page.featured_image | relative_url }}" alt="{{ page.title }}">
+                    {% else %}
+                    <img src="{{ "/assets/images/property-placeholder.jpg" | relative_url }}" alt="{{ page.title }}">
+                    {% endif %}
+                </div>
+                {% if page.gallery %}
+                <div class="thumbnail-gallery">
+                    {% for image in page.gallery limit:5 %}
+                    <div class="thumbnail">
+                        <img src="{{ image.image | relative_url }}" alt="{{ image.alt }}">
+                    </div>
+                    {% endfor %}
+                    {% if page.gallery.size > 5 %}
+                    <div class="thumbnail more-photos">
+                        <span>+{{ page.gallery.size | minus: 5 }}</span>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="property-content">
+        <div class="container">
+            <div class="property-info">
+                <div class="property-main">
+                    <h1 class="property-title">{{ page.title }}</h1>
+                    <div class="property-location">
+                        <i class="fas fa-map-marker-alt"></i> {{ page.location }}
+                    </div>
+                    
+                    <div class="property-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-bed"></i>
+                            <span>{{ page.bedrooms }} Bedrooms</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-bath"></i>
+                            <span>{{ page.bathrooms }} Bathrooms</span>
+                        </div>
+                        <div class="highlight">
+                            <i class="fas fa-user"></i>
+                            <span>{{ page.max_occupancy }} Guests</span>
+                        </div>
+                        {% if page.size %}
+                        <div class="highlight">
+                            <i class="fas fa-ruler-combined"></i>
+                            <span>{{ page.size }}</span>
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="property-description">
+                        {{ content }}
+                    </div>
+
+                    {% if page.amenities %}
+                    <div class="property-amenities">
+                        <h2>Amenities</h2>
+                        <div class="amenities-list">
+                            {% for amenity in page.amenities %}
+                            <div class="amenity">
+                                <i class="fas fa-check"></i>
+                                <span>{{ amenity }}</span>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    {% if page.nearby_attractions %}
+                    <div class="nearby-attractions">
+                        <h2>Nearby Attractions</h2>
+                        <div class="attractions-list">
+                            {% for attraction in page.nearby_attractions %}
+                            <div class="attraction">
+                                <div class="attraction-name">{{ attraction.name }}</div>
+                                <div class="attraction-distance">{{ attraction.distance }}</div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+                
+                <div class="property-sidebar">
+                    <div class="booking-card">
+                        <h3>Book This Property</h3>
+                        {% if page.price %}
+                        <div class="price">
+                            <span class="amount">{{ page.price }}</span>
+                            <span class="period">/ night</span>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="booking-info">
+                            <p>Contact us directly to book this property and get the best rates!</p>
+                        </div>
+                        
+                        <a href="https://wa.me/{{ site.whatsapp_number | remove: '+' }}?text=I'm%20interested%20in%20booking%20{{ page.title | url_encode }}" class="whatsapp-button" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Book via WhatsApp
+                        </a>
+                        
+                        <div class="booking-details">
+                            {% if page.min_stay %}
+                            <div class="detail">
+                                <span class="label">Minimum stay:</span>
+                                <span class="value">{{ page.min_stay }} nights</span>
+                            </div>
+                            {% endif %}
+                            {% if page.check_in %}
+                            <div class="detail">
+                                <span class="label">Check-in:</span>
+                                <span class="value">{{ page.check_in }}</span>
+                            </div>
+                            {% endif %}
+                            {% if page.check_out %}
+                            <div class="detail">
+                                <span class="label">Check-out:</span>
+                                <span class="value">{{ page.check_out }}</span>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                    
+                    {% if page.map_embed %}
+                    <div class="property-map">
+                        <h3>Location</h3>
+                        <div class="map-container">
+                            {{ page.map_embed }}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
