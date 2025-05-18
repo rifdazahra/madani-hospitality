@@ -14,6 +14,31 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // Language switcher functionality
+    const langButtons = document.querySelectorAll('.lang-menu a');
+    
+    if (langButtons.length) {
+        langButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                e.preventDefault();
+                const lang = this.getAttribute('data-lang');
+                const currentUrl = window.location.pathname;
+                const baseUrl = '/madani-hospitality';
+                
+                // Here we'd need to implement the actual language switching logic
+                // For now, we'll just change the current language display
+                const currentLangDisplay = document.querySelector('.lang-current');
+                currentLangDisplay.textContent = this.textContent;
+                
+                // In a real implementation, we would redirect to the translated page
+                // window.location.href = `${baseUrl}/${lang}${currentUrl.replace(baseUrl, '')}`;
+                
+                // For now, just store the language preference in localStorage
+                localStorage.setItem('preferredLanguage', lang);
+            });
+        });
+    }
+    
     // Property gallery image switching
     const thumbnails = document.querySelectorAll('.thumbnail:not(.more-photos)');
     const mainImage = document.querySelector('.main-image img');

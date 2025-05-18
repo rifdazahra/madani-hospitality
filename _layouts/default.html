@@ -26,6 +26,21 @@
                         <li><a href="{{ "/about/" | relative_url }}">About Us</a></li>
                         <li><a href="{{ "/attractions/" | relative_url }}">Attractions</a></li>
                         <li><a href="{{ "/contact/" | relative_url }}">Contact</a></li>
+                        <li class="lang-dropdown">
+                            <a href="#" class="lang-current">
+                                {% if page.lang %}
+                                {{ site.language_names[page.lang] }}
+                                {% else %}
+                                {{ site.language_names[site.default_lang] }}
+                                {% endif %}
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="lang-menu">
+                                {% for lang in site.languages %}
+                                <li><a href="#" data-lang="{{ lang }}">{{ site.language_names[lang] }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
                     </ul>
                 </nav>
                 <div class="mobile-menu-toggle">

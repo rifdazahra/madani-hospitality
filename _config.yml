@@ -8,6 +8,14 @@ baseurl: "/madani-hospitality" # the subpath of your site, e.g. /blog
 url: "https://rifdazahra.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 whatsapp_number: "+6281936127704" # Replace with your actual WhatsApp number
 
+# Language settings
+languages: ["en", "id"]
+default_lang: "en"
+# Language names for display
+language_names:
+  en: English
+  id: Bahasa Indonesia
+
 # Build settings
 markdown: kramdown
 plugins:
