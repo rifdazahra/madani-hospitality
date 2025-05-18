@@ -58,7 +58,7 @@ nearby_attractions:
 map_embed: <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.97055414067!2d110.35234744863279!3d-7.7407297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a59c930228feb%3A0xe7b4d62661d3ed71!2sNgaglik%2C%20Sleman%20Regency%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1655527054968!5m2!1sen!2sid" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 ---
 
-Experience authentic village living in this spacious 3-bedroom house located in the northern part of Yogyakarta. Madani Guesthouse offers a perfect blend of traditional Javanese atmosphere with modern amenities, making it an ideal base for exploring the cultural richness of Yogyakarta.
+Experience authentic village living in this spacious 3-bedroom house located in the northern part of Yogyakarta. Madani Guesthouse offers a perfect blend of traditional Javanese atmosphere with modern amenities, making it an ideal base for exploring the cultural richness of Yogyakarta and the surrounding areas.
 
 ## Property Highlights
 
